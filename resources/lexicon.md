@@ -5,4 +5,10 @@
 - nav__subtitle--white
 - nav__subtitle--dark
 
+- Howto
+- Howto--article
 
+- Video
+- Video--button
+
+- certificate
