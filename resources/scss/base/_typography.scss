@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@700&display=swap');
+// Way to specify the font => font-family: 'Montserrat', sans-serif;
+
+// Import font-face from our folder
+@font-face {
+    font-family: "hind-bold";
+    src: url(../assets/font/hind-blod.otf);
+    font-style: bold;
+}
+@font-face {
+    font-family: "hind-light";
+    src: url(../assets/font/hind-light.otf);
+    font-style: light;
+}
+@font-face {
+    font-family: "hind-medium";
+    src: url(../assets/font/hind-medium.otf);
+    font-style: medium;
+}
+@font-face {
+    font-family: "hind-regular";
+    src: url(../assets/font/hind-regular.otf);
+    font-style: regular;
+}
+@font-face {
+    font-family: "hind-semibold";
+    src: url(../assets/font/hind-semibold.otf);
+    font-style: semibold;
+}
