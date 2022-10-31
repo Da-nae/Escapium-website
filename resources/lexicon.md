@@ -6,9 +6,13 @@
 - nav__subtitle--dark
 
 - Howto
-- Howto--article
+- Howto__article
 
 - Video
-- Video--button
+- Video__button
 
 - certificate
+- certificat__img
+
+- team
+- team__mates
