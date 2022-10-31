@@ -1,3 +1,5 @@
+@import './base/reset';
 @import './base/_typography.scss';
-@import './layout/footer';
+@import './layout/body';
+@import './layout/footer/footer';
 @import './sass-utils/mixins';

@@ -1,0 +1,15 @@
+
+// Icons
+.footer__top__blocs__socialLinks{
+    // background-color: greenyellow;
+
+    .footer__top__blocs__socialLinks__container__icons--grid{
+        // background-color: pink;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        &.footer__top__blocs__socialLinks__container__icons--grid *{
+            width: 30px;
+        }
+    }
+}
