@@ -1,5 +1,27 @@
 footer{
-    width: 412px;
-    height: auto;
-    background-color: black;
+    .footer__top__blocs__ourAddress__index--flexbox,
+    .footer__top__blocs__usefulLinks__index--flexbox,
+    .footer__top__blocs__workingHours__index--flexbox,
+    .footer__top__blocs__socialLinks__index--flexbox{
+        // background-color: greenyellow;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 60px;
+
+        & :first-child{
+            color: white;
+            margin: 5px;
+        }
+    }
+}
+
+
+footer{
+    hr{
+        width: 30px;
+        height: 2px;
+        border: none;
+        background-color: red;
+    }
 }

@@ -1,0 +1,10 @@
+@mixin blocsFlexbox {
+    .footer__top__blocs__ourAddress__index--flexbox,
+    .footer__top__blocs__usefulLinks__index--flexbox,
+    .footer__top__blocs__workingHours__index--flexbox,
+    .footer__top__blocs__socialLinks__index--flexbox{
+        background-color: red;
+        display: flex;
+        flex-direction: row;
+    }
+}

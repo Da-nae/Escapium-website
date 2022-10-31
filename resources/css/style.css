@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@700&display=swap");
+@font-face {
+  font-family: "hind-bold";
+  src: url(../assets/font/hind-blod.otf);
+  font-style: bold;
+}
+@font-face {
+  font-family: "hind-light";
+  src: url(../assets/font/hind-light.otf);
+  font-style: light;
+}
+@font-face {
+  font-family: "hind-medium";
+  src: url(../assets/font/hind-medium.otf);
+  font-style: medium;
+}
+@font-face {
+  font-family: "hind-regular";
+  src: url(../assets/font/hind-regular.otf);
+  font-style: regular;
+}
+@font-face {
+  font-family: "hind-semibold";
+  src: url(../assets/font/hind-semibold.otf);
+  font-style: semibold;
+}
+footer .footer__top__blocs__ourAddress__index--flexbox,
+footer .footer__top__blocs__usefulLinks__index--flexbox,
+footer .footer__top__blocs__workingHours__index--flexbox,
+footer .footer__top__blocs__socialLinks__index--flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60px;
+}
+footer .footer__top__blocs__ourAddress__index--flexbox :first-child,
+footer .footer__top__blocs__usefulLinks__index--flexbox :first-child,
+footer .footer__top__blocs__workingHours__index--flexbox :first-child,
+footer .footer__top__blocs__socialLinks__index--flexbox :first-child {
+  color: white;
+  margin: 5px;
+}
+
+footer hr {
+  width: 30px;
+  height: 2px;
+  border: none;
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
