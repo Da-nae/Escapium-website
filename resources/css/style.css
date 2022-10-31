@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat:wght@700&display=swap");
+@font-face {
+  font-family: "hind-bold";
+  src: url(../assets/font/hind-blod.otf);
+  font-style: bold;
+}
+@font-face {
+  font-family: "hind-light";
+  src: url(../assets/font/hind-light.otf);
+  font-style: light;
+}
+@font-face {
+  font-family: "hind-medium";
+  src: url(../assets/font/hind-medium.otf);
+  font-style: medium;
+}
+@font-face {
+  font-family: "hind-regular";
+  src: url(../assets/font/hind-regular.otf);
+  font-style: regular;
+}
+@font-face {
+  font-family: "hind-semibold";
+  src: url(../assets/font/hind-semibold.otf);
+  font-style: semibold;
+}
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "hind-bold";
+  src: url(../assets/font/hind-blod.otf);
+  font-style: bold;
+}
+@font-face {
+  font-family: "hind-light";
+  src: url(../assets/font/hind-light.otf);
+  font-style: light;
+}
+@font-face {
+  font-family: "hind-medium";
+  src: url(../assets/font/hind-medium.otf);
+  font-style: medium;
+}
+@font-face {
+  font-family: "hind-regular";
+  src: url(../assets/font/hind-regular.otf);
+  font-style: regular;
+}
+@font-face {
+  font-family: "hind-semibold";
+  src: url(../assets/font/hind-semibold.otf);
+  font-style: semibold;
+}
+body {
+  font-family: "hind-regular";
+  font-size: 10px;
+}
+
+.about {
+  font-family: "hind-regular";
+  color: #717171;
+  font-size: 1rem;
+  background-color: #1b1b1b;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+.about hr {
+  border: 2px solid #333333;
+  height: 2px;
+  width: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+}
+.about .about__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-image: linear-gradient(290deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("/resources/images/gallery/slide-1.jpg");
+  background-size: cover;
+}
+.about .about__title h1 {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  padding-top: 50px;
+  text-transform: lowercase;
+}
+.about .about__title h1 span {
+  color: #F60B0E;
+}
+.about .about__title .nav__subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.about .about__title .nav__subtitle li {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 10px;
+}
+.about .about__title .nav__subtitle .nav__subtitle--white {
+  color: white;
+}
+.about h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 70px;
+}
+.about li {
+  text-decoration: none;
+  list-style-type: none;
+}
+.about .Howto article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.about .Howto article h3 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  margin: 10px;
+}
+.about .Howto article p {
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+}
+.about .Howto article .Howto__bar {
+  background-color: #333333;
+  transform: rotate(30deg);
+  width: 2px;
+  height: 95px;
+  z-index: -1;
+  position: relative;
+  margin-top: -86px;
+}
+.about .Howto article img {
+  width: 70px;
+  background-color: #1b1b1b;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  padding: 15px;
+}
+.about .Howto img {
+  width: 30px;
+  background-color: #F60B0E;
+  padding: 40px;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

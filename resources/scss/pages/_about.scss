@@ -1,0 +1,144 @@
+@import "../base/reset.scss";
+@import "../base/typography.scss";
+@import "../sass-utils/variables.scss";
+
+body {
+    font-family: 'hind-regular';
+    font-size: 10px;
+}
+
+.about {
+
+    font-family: "hind-regular";
+    color: $main-font-color;
+    font-size: 1rem;
+    background-color: $bg-color-dark;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    hr {
+        border: 2px solid $hr-color;
+        height: 2px;
+        width: 30px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: center;
+    }
+
+    .about__title{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.6rem;
+            padding-top: 50px;
+            text-transform: lowercase;
+
+            span{
+                color: $main-color;
+            }
+        }
+
+        .nav__subtitle{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+
+            li {
+                margin-top: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+                font-size: 10px;
+            }
+
+            .nav__subtitle--white {
+                color: white;
+            }
+        }
+
+        background-image: linear-gradient(
+            290deg,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.6) 100%
+          ),url('/resources/images/gallery/slide-1.jpg');
+        background-size: cover;
+
+    }
+
+    h2 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        margin-bottom: 70px;
+    }
+
+    li {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .Howto {
+
+        article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            margin: 10px;
+        }
+
+        p {
+            width: 90%;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        z-index: 1;
+        .Howto__bar {
+            background-color: $hr-color;
+            transform: rotate(30deg);
+            width: 2px;
+            height: 95px;
+            z-index: -1;
+            position: relative;
+            margin-top: -86px;
+        }
+
+        img {
+            width: 70px;
+            background-color: $bg-color-dark;
+            border-radius: 50%;
+            border: 2px solid $hr-color;
+            padding: 15px;
+        }
+    }
+
+        img {
+            width: 30px;
+            background-color: $main-color;
+            padding: 40px;
+            border-radius: 50%;
+        }
+    }
+
+}
+

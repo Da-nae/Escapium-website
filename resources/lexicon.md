@@ -16,3 +16,6 @@
 
 - team
 - team__mates
+
+-faq
+-faq__question
