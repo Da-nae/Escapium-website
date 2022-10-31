@@ -1,0 +1,7 @@
+footer {
+  .footer__top__blocs__workingHours__container__shedule--grid {
+    // background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
