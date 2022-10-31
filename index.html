@@ -12,7 +12,6 @@
     <!-- HEADER  -->
 
     <header class="header-home">
-        <h1 class="hidden">Escapium</h1>
         <nav class="navbar">
             <img src="./resources/images/logo/logo.png">
             <ul class="navbar__navigation">
@@ -46,10 +45,15 @@
                     <span>Sign In</span>
                 </div>
             </div>
-            <a href="book"></a>
         </nav>
-        <h2>Escape <br> in 60 mins ?</h2>
-        <p>View our rooms</p>
+        <div class="header-home__content">
+            <h1>Escape <br> in 60 mins ?</h1>
+            <div class="header-home__p">
+                <hr>
+                <p>View our rooms</p>
+            </div>
+        </div>
+        
     </header>
 
     <main>
@@ -88,13 +92,13 @@
                         </a>
                     </div>
                 </div>
-                <img src="./resources/images/gallery/slide-2-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere.">
+                <img src="./resources/images/gallery/slide-2-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere." class="section-rooms__article__cover">
             </article>
 
             <!-- Second article -->
 
             <article class="section-rooms__article">
-                <img src="./resources/images/gallery/room-2-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere.">
+                <img src="./resources/images/gallery/room-2-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere." class="section-rooms__article__cover">
                 <div class="section-rooms__article--aside">
                     <div class="section-rooms__locker">
                         <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
@@ -150,7 +154,7 @@
                         </a>
                     </div>
                 </div>
-                <img src="./resources/images/gallery/room-3-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere.">
+                <img src="./resources/images/gallery/room-3-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere." class="section-rooms__article__cover">
             </article>
             <a href="#" class="button button--white">View All Rooms</a>
         </section>
@@ -218,7 +222,7 @@
 
                 <article class="section-blog__article">
                     <div class="section-blog__article--top">
-                        <img src="./resources/images/gallery/room-9-360x222.jpg" alt="A clock on a table">
+                        <img src="./resources/images/gallery/room-9-360x222.jpg" alt="A clock on a table" class="section-blog__article--top__cover">
                         <div>
                             <img src="./resources/images/avatars/c3c95c15683498ce1cf96c1a61b662c9.png">
                             <span class="author-name">Andy Bernard</span>
@@ -236,7 +240,7 @@
 
                 <article class="section-blog__article">
                     <div class="section-blog__article--top">
-                        <img src="./resources/images/gallery/room-7-360x222.jpg" alt="A clock on a table">
+                        <img src="./resources/images/gallery/room-7-360x222.jpg" alt="A clock on a table" class="section-blog__article--top__cover">
                         <div>
                             <img src="./resources/images/avatars/betty-draper.png">
                             <span class="author-name">Betty Draper</span>
@@ -254,7 +258,7 @@
 
                 <article class="section-blog__article">
                     <div class="section-blog__article--top">
-                        <img src="./resources/images/gallery/post-img-2-360x222.jpg" alt="A clock on a table">
+                        <img src="./resources/images/gallery/post-img-2-360x222.jpg" alt="A clock on a table" class="section-blog__article--top__cover">
                         <div>
                             <img src="./resources/images/avatars/c3c95c15683498ce1cf96c1a61b662c9.png">
                             <span class="author-name">Andy Bernard</span>
@@ -365,5 +369,6 @@
 
     <!-- FOOTER -->
 
+    <script src="./resources/js/index.js"></script>
 </body>
 </html>
