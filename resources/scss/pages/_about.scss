@@ -47,7 +47,7 @@ body {
             padding-top: 50px;
             text-transform: lowercase;
 
-            span{
+            span {
                 color: $main-color;
             }
         }
@@ -75,7 +75,7 @@ body {
             290deg,
             rgba(0, 0, 0, 0.6) 0%,
             rgba(0, 0, 0, 0.6) 100%
-          ),url('/resources/images/gallery/slide-1.jpg');
+        ),url('/resources/images/gallery/slide-1.jpg');
         background-size: cover;
 
     }
@@ -112,33 +112,155 @@ body {
             font-size: 0.9rem;
         }
 
-        z-index: 1;
         .Howto__bar {
             background-color: $hr-color;
             transform: rotate(30deg);
             width: 2px;
             height: 95px;
-            z-index: -1;
+            z-index: 0;
             position: relative;
-            margin-top: -86px;
+            margin-top: -84px;
         }
 
         img {
+            z-index: 1;
             width: 70px;
             background-color: $bg-color-dark;
             border-radius: 50%;
-            border: 2px solid $hr-color;
+            outline: 2px solid $hr-color;
             padding: 15px;
         }
     }
 
-        img {
-            width: 30px;
-            background-color: $main-color;
-            padding: 40px;
-            border-radius: 50%;
+        .Video {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image:  linear-gradient(
+                290deg,
+                rgba(0, 0, 0, 0.6) 0%,
+                rgba(0, 0, 0, 0.6) 100%
+            ),url("/resources/images/gallery/gallery-1.jpg");
+            min-height: 140px;
+            background-size: cover;
+
+            img {
+                width: 20px;
+                height: 20px;
+                margin-top: 20px;
+            }
+
+            .Video__button {
+                background-color: $main-color;
+                border-radius: 50%;
+                width: 60px;
+                height: 60px;
+                outline: 4px solid rgba(126, 126, 126, 0.523);
+            }
         }
     }
 
+    .certificate {
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        img {
+            margin-bottom: 15px;
+        }
+    }
+
+    .team {
+        background-color: $bg-color-medium;
+        width: 100%;
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        h4 {
+            font-size: 0.9rem;
+            margin-bottom: 50px;
+        }
+
+        img {
+            max-height: 300px;
+        }
+    }
+
+    .opinion {
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+        a {
+            font-size: 0.6rem;
+            color: $main-color;
+            line-height: 2rem;
+            letter-spacing: 0.1rem;
+            text-decoration: none;
+            border-bottom: 1px solid $main-color;
+            text-transform: capitalize;
+        }
+
+        blockquote {
+            width: 330px;
+            font-size: 0.9rem;
+            padding-bottom: 40px;
+            padding-top: 30px;
+        }
+
+        figcaption {
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+    }
+
+    .faq {
+        background-color: $bg-color-light;
+
+        hr {
+            border-color: $hr-color-light;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 5px;
+            color: $hr-color
+        }
+
+        h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            color: $bg-color-dark;
+            font-size: 1rem;
+        }
+
+        p {
+            color: $hr-color-light;
+            font-size: 0.9rem;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-weight: 100;
+        }
+
+        .faq__question {
+            text-align: left;
+        }
+    }
 }
 
