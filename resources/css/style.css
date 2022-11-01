@@ -119,7 +119,14 @@ footer .footer__top__blocs__workingHours__container__shedule--grid {
   grid-template-columns: repeat(5, 1fr);
 }
 .footer__top__blocs__socialLinks .footer__top__blocs__socialLinks__container__icons--grid.footer__top__blocs__socialLinks__container__icons--grid * {
-  width: 30px;
+  width: 40px;
+}
+
+.footer__top__blocs__socialLinks__container__icons--grid * :first-child {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid;
 }
 
 footer .footer__bot--flexbox {
@@ -143,10 +150,19 @@ footer .footer__bot--flexbox .footer__bot__container--flexbox {
 footer {
   width: 412px;
   height: auto;
-  background-color: rgba(51, 51, 51, 0.2);
+  background-image: url(/resources/images/gallery/room-7-1600-599.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: red;
 }
 footer p {
   font-size: 12px;
+}
+footer .footer__bgColor {
+  width: 100%;
+  height: 100%;
+  background-color: red;
 }
 
 footer .footer__top--flexbox {

@@ -9,7 +9,15 @@
         grid-template-columns: repeat(5, 1fr);
 
         &.footer__top__blocs__socialLinks__container__icons--grid *{
-            width: 30px;
+            width: 40px;
+            
         }
     }
+}
+
+.footer__top__blocs__socialLinks__container__icons--grid * :first-child{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid;
 }
