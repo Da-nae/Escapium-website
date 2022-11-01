@@ -109,14 +109,38 @@ body {
   background-color: rgba(51, 51, 51, 0.2);
 }
 
+.footer__top__blocs__workingHours__container {
+  margin: 0px 25px;
+}
+
+.footer__top__blocs__workingHours__title {
+  margin: 20px 0px 20px;
+}
+
 footer .footer__top__blocs__workingHours__container__shedule--grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 200px;
+}
+footer .footer__top__blocs__workingHours__container__shedule--grid * {
+  margin-bottom: 15px;
+}
+
+.footer__top__blocs__socialLinks__container {
+  margin: 0px 25px;
+}
+
+.footer__top__blocs__socialLinks__container__title {
+  margin: 20px 0px 20px;
 }
 
 .footer__top__blocs__socialLinks .footer__top__blocs__socialLinks__container__icons--grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 50px);
+  grid-template-rows: repeat(2, 50px);
+  align-items: center;
+  justify-items: center;
+  margin: 0px 0px 50px;
 }
 .footer__top__blocs__socialLinks .footer__top__blocs__socialLinks__container__icons--grid.footer__top__blocs__socialLinks__container__icons--grid * {
   width: 40px;
@@ -129,7 +153,7 @@ footer .footer__top__blocs__workingHours__container__shedule--grid {
   border: 1px solid;
 }
 
-footer .footer__bot--flexbox {
+.footer__bot--flexbox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,7 +162,7 @@ footer .footer__bot--flexbox {
   height: 150px;
   border-top: 1px solid white;
 }
-footer .footer__bot--flexbox .footer__bot__container--flexbox {
+.footer__bot--flexbox .footer__bot__container--flexbox {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,23 +170,54 @@ footer .footer__bot--flexbox .footer__bot__container--flexbox {
   width: 100%;
   height: 60%;
 }
+.footer__bot--flexbox .footer__bot__container--flexbox a {
+  color: white;
+  font-size: 12px;
+}
+
+.footer__bot__container__logo {
+  width: 130px;
+}
 
 footer {
   width: 412px;
   height: auto;
-  background-image: url(/resources/images/gallery/room-7-1600-599.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: red;
+  position: relative;
+  overflow: hidden;
+  font-family: Montserrat, sans-serif;
+}
+footer h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
 }
 footer p {
   font-size: 12px;
+  font-weight: lighter;
+  color: rgb(243, 232, 232);
 }
-footer .footer__bgColor {
+
+.footer__bgImage {
   width: 100%;
   height: 100%;
-  background-color: red;
+  background-color: rgb(58, 58, 58);
+  position: absolute;
+  z-index: -1;
+}
+.footer__bgImage .footer__bgImage__color {
+  background-color: rgb(255, 4, 4);
+  width: 100%;
+  height: 100%;
+  opacity: 100%;
+}
+.footer__bgImage .footer__bgImage__image {
+  width: 100%;
+  height: 100%;
+  background-image: url(/resources/images/gallery/room-7-1600-599.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
 }
 
 footer .footer__top--flexbox {

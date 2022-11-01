@@ -1,3 +1,11 @@
+.footer__top__blocs__socialLinks__container{
+    margin: 0px 25px;
+}
+
+
+.footer__top__blocs__socialLinks__container__title{
+    margin: 20px 0px 20px;
+}
 
 // Icons
 .footer__top__blocs__socialLinks{
@@ -6,7 +14,11 @@
     .footer__top__blocs__socialLinks__container__icons--grid{
         // background-color: pink;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(5, 50px);
+        grid-template-rows: repeat(2, 50px);
+        align-items: center;
+        justify-items: center;
+        margin: 0px 0px 50px;
 
         &.footer__top__blocs__socialLinks__container__icons--grid *{
             width: 40px;
