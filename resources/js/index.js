@@ -1,3 +1,4 @@
+/* Navbar animation */
 let navbar = document.querySelector(".navbar");
 let lastScrollValue = 0;
 
@@ -10,3 +11,22 @@ document.addEventListener('scroll',() => {
     }
     lastScrollValue = top;
 });
+
+/* Menu Hamburger animation on click */
+
+const btn = document.querySelector('.btn1');
+
+btn.addEventListener('click', presentation);
+
+function presentation() {
+    btn.classList.toggle('active')
+}
+
+/* Menu hamburger toggle navlinks on click */
+
+const menuHamburger = document.querySelector(".cont-lines")
+const navLinks = document.querySelector(".navbar__navigation")
+
+menuHamburger.addEventListener('click',()=>{
+navLinks.classList.toggle('mobile-menu')
+})

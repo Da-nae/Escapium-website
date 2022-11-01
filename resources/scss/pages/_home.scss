@@ -84,14 +84,82 @@ hr {
 }
 
 @media (max-width: 850px) {
-    
+    .header-home {
+        height: 700px;
+        h1 {
+            color: white;
+            font-family: "hind-bold";
+            font-size: 6rem;
+            margin-bottom: 80px;
+            line-height: 6rem;
+        }
+        &__content {
+            height: 100%;
+            display: sta;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+        }
+        &__p {
+            hr {
+                border: none;
+                height: 0;
+                width: 0;
+                margin: 0;
+                position: relative;
+                bottom: 0;
+            }
+            p {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 8px;
+                color: white;
+                margin-left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 660px) {
+    .header-home {
+        height: 500px;
+        h1 {
+            color: white;
+            font-family: "hind-bold";
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
 }
 @media (max-width: 500px) {
-
+    .header-home {
+        height: 300px;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            line-height: 2rem;
+        }
+        &__p {
+            hr {
+                border: none;
+            }
+            p {
+                letter-spacing: 3px;
+            }
+        }
+    }
 }
 
 /* Navbar */
 .navbar {
+    // position: relative;
+    z-index: 2;
     width: 100%;
     background: linear-gradient(to bottom, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5));
     display: flex;
@@ -99,6 +167,8 @@ hr {
     height: 80px;
     &__navigation {
         display: flex;
+        position: relative;
+        transition: 0.2s ease-in-out;
         justify-content: center;
         align-items: center;
         font-family: "hind-bold";
@@ -111,21 +181,6 @@ hr {
             text-decoration: none;
             transition: .2s ease-in-out;
         }
-        a:before {
-            content: '';
-            position: absolute;
-            margin-left: 50%;
-            height: 50px;
-            bottom: -100%;
-            transform: translateX(-50%) rotate(-135deg) scaleY(0);
-            transition: transform .5s cubic-bezier(.2,1,.2,1);
-            z-index: -1;
-        }
-        a:hover:before {
-            background: $main-color;
-            width: 2px;
-            transform: translateX(-50%) rotate(-135deg) scaleY(1);
-        }
         a:hover {
             color: white;
             transition: .2s ease-in-out;
@@ -136,7 +191,7 @@ hr {
         align-items: center;
         justify-content: space-around;
         position: absolute;
-        right: 20px;
+        right: 10px;
         top: -54px;
         width: 300px;
         .button--white {
@@ -174,6 +229,53 @@ hr {
     width: 23px;
 }
 
+// Hamburger menu
+.navbar__right-side__hamburger {
+    display: none;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    .cont-lines {
+        height: 26px;
+        width: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .hamburger__lines {
+            width: 100%;
+            height: 4px;
+            border-radius: 1px;
+            background: white;
+            position: absolute;
+            transition: all 0.2s ease-in-out;
+        }
+        .hamburger__lines:nth-child(1) {
+            top: 0px;
+        }
+        .hamburger__lines:nth-child(2) {
+            top: 11px;
+        }
+        .hamburger__lines:nth-child(3) {
+            top: 22px;
+        }
+    }
+
+}
+.btn1.active .hamburger__lines:nth-child(1) {
+    top: 11px;
+    transform: rotate(135deg);
+}
+.btn1.active .hamburger__lines:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-70px);
+}
+.btn1.active .hamburger__lines:nth-child(3) {
+    top: 11px;
+    transform: rotate(-135deg);
+}
+
 // Animation
 .navbar{
     position: fixed;
@@ -187,7 +289,53 @@ hr {
   
 .navbar.hidden {
     top: -80px;
-  }
+}
+
+// .navbar__hide {
+//     width: 45px;
+// }
+// .navbar__booknow {
+//     display: none;
+// }
+
+
+// Responsive
+@media (max-width: 1200px) {
+    
+}
+.navbar__navigation.mobile-menu {
+    transition: 0.2s ease-in-out;
+    left: 0;
+}
+@media (max-width: 1100px) {
+    .navbar__right-side__hamburger {
+        display: block;
+    }
+    .navbar__navigation {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: $bg-color-medium;
+        width: 270px;
+        height: 100vh;
+        left: -270px;
+        li {
+            width: 270px;
+            border-bottom: 1px solid white;
+        }
+    }
+}
+@media (max-width: 770px) {
+    .navbar {
+        height: 50px;
+        &__right-side {
+            right: 10px;
+            top: -71px;
+        }
+    }
+}
 
 /* FEATURED ROOMS */
 
@@ -252,6 +400,12 @@ hr {
     }
 }
 @media (max-width: 500px) {
+    .section-rooms {
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 50px;
+        }
+    }
     .section-rooms__article__cover {
         width: 95%;
     }
@@ -755,6 +909,9 @@ hr {
 @media (max-width: 500px) {
     .section-ready {
         padding: 50px 0 60px 0;
+        p {
+            margin-bottom: 20px;
+        }
         h2 {
             font-size: 2rem;
             margin-bottom: 10px;
