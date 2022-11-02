@@ -103,10 +103,67 @@ th {
   font-style: semibold;
 }
 body {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(51, 51, 51, 0.2);
+  background-color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 412px) {
+  .footer__top__blocs--grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: blue;
+  }
+}
+@media only screen and (min-width: 412px) {
+  .footer__top__blocs--grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: greenyellow;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__top__blocs--grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: red;
+  }
+}
+.footer__top__blocs__ourAddress__container--flexbox {
+  margin: 0px 25px 15px;
+}
+
+.footer__top__blocs__ourAddress__container__title {
+  margin: 20px 0px 20px;
+}
+
+.footer__top__blocs__ourAddress__container--flexbox {
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__top__blocs__usefulLinks__container {
+  margin: 0px 25px 20px;
+  height: 230px;
+}
+.footer__top__blocs__usefulLinks__container .footer__top__blocs__usefulLinks__container__links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer__top__blocs__usefulLinks__container .footer__top__blocs__usefulLinks__container__links * {
+  margin-bottom: 10px;
+}
+
+.footer__top__blocs__usefulLinks__container__title {
+  margin: 20px 0px 20px;
 }
 
 .footer__top__blocs__workingHours__container {
@@ -180,7 +237,7 @@ footer .footer__top__blocs__workingHours__container__shedule--grid * {
 }
 
 footer {
-  width: 412px;
+  width: 100%;
   height: auto;
   position: relative;
   overflow: hidden;
@@ -194,7 +251,7 @@ footer h2 {
 footer p {
   font-size: 12px;
   font-weight: lighter;
-  color: rgb(243, 232, 232);
+  color: #717171;
 }
 
 .footer__bgImage {
@@ -229,10 +286,6 @@ footer .footer__top--flexbox {
 }
 footer .footer__top__blocs--grid {
   width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  grid-row-gap: 12px;
 }
 footer .footer__top__blocs__ourAddress__index--flexbox,
 footer .footer__top__blocs__usefulLinks__index--flexbox,

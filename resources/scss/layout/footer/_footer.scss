@@ -6,11 +6,12 @@
 
 // Footer
 footer {
-  width: 412px;
+  width: 100%;
   height: auto;
   position: relative;
   overflow: hidden;
   font-family: Montserrat, sans-serif;
+  
 
   h2 {
     font-size: 18px;
@@ -21,7 +22,7 @@ footer {
   p {
     font-size: 12px;
     font-weight: lighter;
-    color: rgb(243, 232, 232);
+    color: #717171;
   }
 }
 
@@ -69,10 +70,10 @@ footer {
     // padding: 1rem;
     width: 90%;
     // background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    grid-row-gap: 12px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    // grid-row-gap: 12px;
 
     // Containers --grid
     &.footer__top__blocs--grid * {
