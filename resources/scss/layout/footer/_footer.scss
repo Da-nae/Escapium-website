@@ -14,13 +14,13 @@ footer {
   
 
   h2 {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color: white;
   }
 
   p {
-    font-size: 12px;
+    font-size: 10px;
     font-weight: lighter;
     color: #717171;
   }
@@ -73,7 +73,7 @@ footer {
   // Containers --grid
   .footer__top__blocs--grid {
     // padding: 1rem;
-    width: 90%;
+    width: 80%;
 
     // Containers --grid
     &.footer__top__blocs--grid * {
@@ -103,10 +103,11 @@ footer {
 
 // Index red line
 footer {
-  hr {
+  .footer__top__blocs__index__hr{
     width: 30px;
     height: 2px;
     border: none;
+    margin: 0;
     background-color: red;
   }
 }
