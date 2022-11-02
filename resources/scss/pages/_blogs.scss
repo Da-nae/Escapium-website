@@ -9,6 +9,10 @@ body {
         width: 40px;
         margin: 0 0 20px 0;
     }
+
+    hr__side {
+        align-self: flex-start;
+    }
 }
 
 .blogs {
@@ -102,16 +106,21 @@ body {
             margin-bottom: 70px; 
         }
 
-            .button--white {
-                border-radius: 500px;
-                color: white;
-                text-decoration: none;
-                font-family: "hind-bold";
-                font-size: 0.8rem;
-                padding: 1rem 2rem;
-                border: 1px solid $button-gray;
-                margin-bottom: 75px;
-                font-size: 1rem;
+        .button--white {
+            display:flex;
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            font-family: "hind-bold";
+            font-size: 1rem;
+            padding: 1rem 2rem;
+            border: 1px solid $button-gray;
+            margin-bottom: 75px;
+
+            img {
+                width: 20px;
+                margin-right: 10px;
             }
         }
     }
+}

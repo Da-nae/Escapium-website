@@ -1918,6 +1918,9 @@ body hr {
   width: 40px;
   margin: 0 0 20px 0;
 }
+body hr__side {
+  align-self: flex-start;
+}
 
 .blogs {
   font-family: "hind-regular";
@@ -1992,15 +1995,19 @@ body hr {
   margin-bottom: 70px;
 }
 .blogs .Insta .button--white {
-  border-radius: 500px;
+  display: flex;
+  border-radius: 50px;
   color: white;
   text-decoration: none;
   font-family: "hind-bold";
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding: 1rem 2rem;
   border: 1px solid #C5CFD7;
   margin-bottom: 75px;
-  font-size: 1rem;
+}
+.blogs .Insta .button--white img {
+  width: 20px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
