@@ -218,9 +218,20 @@ body {
   background-color: #1b1b1b;
   text-align: center;
   display: flex;
+  max-height: max-content;
   flex-direction: column;
   align-items: center;
   align-content: center;
+}
+.about h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 70px;
+}
+.about li {
+  text-decoration: none;
+  list-style-type: none;
 }
 .about hr {
   border: 2px solid #333333;
@@ -268,15 +279,10 @@ body {
 .about .about__title .nav__subtitle .nav__subtitle--white {
   color: white;
 }
-.about h2 {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
-  margin-bottom: 70px;
-}
-.about li {
-  text-decoration: none;
-  list-style-type: none;
+.about .Howto .Howto__content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .about .Howto article {
   display: flex;
@@ -290,7 +296,7 @@ body {
   margin: 10px;
 }
 .about .Howto article p {
-  width: 90%;
+  max-width: 300px;
   margin-bottom: 30px;
   font-size: 0.9rem;
 }
@@ -336,11 +342,16 @@ body {
   margin-bottom: 40px;
 }
 .about .certificate img {
-  margin-bottom: 15px;
+  margin: 15px;
 }
 .about .team {
   background-color: #222222;
   width: 100%;
+}
+.about .team .team__content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .about .team h2 {
   margin-top: 40px;
@@ -387,9 +398,13 @@ body {
 }
 .about .faq {
   background-color: #FEFEFE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about .faq hr {
   border-color: #9B9B9B;
+  height: 2px;
 }
 .about .faq h2 {
   margin-top: 40px;
@@ -405,12 +420,46 @@ body {
 .about .faq p {
   color: #9B9B9B;
   font-size: 0.9rem;
-  margin-left: 5px;
-  margin-right: 5px;
   font-weight: 100;
+  margin-bottom: 20px;
 }
-.about .faq .faq__question {
+.about .faq .faq__content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 60%;
+}
+.about .faq .faq__content .faq__question {
   text-align: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.about .faq .faq__content .faq__button {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  color: #777;
+  margin-right: 20px;
+  position: relative;
+}
+.about .faq .faq__content .faq__button::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: rgba(194, 194, 194, 0.2549019608);
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 800px) {
+  body .about .about__title h1 {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

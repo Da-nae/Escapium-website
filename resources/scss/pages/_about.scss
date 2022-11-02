@@ -9,6 +9,8 @@ body {
 
 .about {
 
+    // General layout :
+
     font-family: "hind-regular";
     color: $main-font-color;
     font-size: 1rem;
@@ -16,9 +18,25 @@ body {
     text-align: center;
 
     display: flex;
+    max-height: max-content;
     flex-direction: column;
     align-items: center;
     align-content: center;
+
+    h2 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        margin-bottom: 70px;
+    }
+
+    li {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+
+    // lines between the section :
 
     hr {
         border: 2px solid $hr-color;
@@ -30,6 +48,8 @@ body {
         margin-right: auto;
         align-self: center;
     }
+
+    // Header :
 
     .about__title{
 
@@ -80,19 +100,16 @@ body {
 
     }
 
-    h2 {
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.3rem;
-        margin-bottom: 70px;
-    }
-
-    li {
-        text-decoration: none;
-        list-style-type: none;
-    }
+    // How to section :
 
     .Howto {
+
+        .Howto__content {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        // How to article aka logo and texts :
 
         article {
         display: flex;
@@ -107,7 +124,7 @@ body {
         }
 
         p {
-            width: 90%;
+            max-width: 300px;
             margin-bottom: 30px;
             font-size: 0.9rem;
         }
@@ -160,6 +177,8 @@ body {
         }
     }
 
+    // Certificate section :
+
     .certificate {
 
         h2 {
@@ -168,13 +187,21 @@ body {
         }
 
         img {
-            margin-bottom: 15px;
+            margin: 15px;
         }
     }
+
+    // Our team section 
 
     .team {
         background-color: $bg-color-medium;
         width: 100%;
+
+        .team__content {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
 
         h2 {
             margin-top: 40px;
@@ -197,6 +224,8 @@ body {
             max-height: 300px;
         }
     }
+
+    // testimonial section : 
 
     .opinion {
 
@@ -230,11 +259,17 @@ body {
         }
     }
 
+    // FAQs section :
+
     .faq {
         background-color: $bg-color-light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         hr {
             border-color: $hr-color-light;
+            height: 2px;
         }
 
         h2 {
@@ -253,14 +288,57 @@ body {
         p {
             color: $hr-color-light;
             font-size: 0.9rem;
-            margin-left: 5px;
-            margin-right: 5px;
             font-weight: 100;
+            margin-bottom: 20px;
         }
 
-        .faq__question {
-            text-align: left;
+        .faq__content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            max-width: 60%;
+
+            .faq__question {
+                text-align: left;
+                margin-right: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+
+            .faq__button {
+                font-size: 40px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 100;
+                color: $nav-font-color;
+                margin-right: 20px;
+
+                position: relative;
+                
+
+                &::before{
+                    content: '';
+                    height: 50px;
+                    width: 50px;
+
+                    background-color: #c2c2c241;
+                    position: absolute;
+                    border-radius: 50%;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
         }
+    }
+}
+
+// Responsive : 
+
+@media only screen and (min-width: 800px) {
+
+    body .about .about__title h1 {
+        margin-top: 50px;
+        font-size: 3rem;
     }
 }
 
