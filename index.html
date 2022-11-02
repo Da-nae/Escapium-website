@@ -4,9 +4,407 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css">
     <title>Escapium</title>
 </head>
 <body>
-    
+
+    <!-- HEADER  -->
+
+    <header class="header-home">
+        <!-- Start navbar -->
+        <nav class="navbar">
+
+            <!-- LEFT SIDE -->
+
+            <img src="./resources/images/logo/logo.png">
+            <ul class="navbar__navigation">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="#">Features</a>
+                    <span class=".hidden">+</span>
+                </li>
+                <li>
+                    <a href="./rooms.html">Rooms</a>
+                    <span>+</span>
+                </li>
+                <li>
+                    <a href="#">Booking</a>
+                    <span>+</span>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                    <span>+</span>
+                </li>
+                <li>
+                    <a href="./contact.html" class="navbar_last-element">Contacts</a>
+                </li>
+                <div class="navbar__right-side__sign-in nav__left">
+                    <img src="./resources/images/icons/icon_person_wired.svg" class="navbar__right-side__icon">
+                    <span>Sign In</span>
+                </div>
+            </ul>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="navbar__right-side">
+
+                <!-- <img src="./resources/images/icons/icon_calendar.svg" class="navbar__hide"> -->
+                <a href="#" class="button button--white navbar__booknow">Book Now!</a>
+                <img src="./resources/images/icons/icon_search.svg" class="navbar__right-side__icon">
+                <div class="navbar__right-side__sign-in nav__right">
+                    <img src="./resources/images/icons/icon_person_wired.svg" class="navbar__right-side__icon">
+                    <span>Sign In</span>
+                </div>
+
+                <div class="navbar__right-side__hamburger">
+                    <div class="cont-lines btn1">
+                        <div class="hamburger__lines"></div>
+                        <div class="hamburger__lines"></div>
+                        <div class="hamburger__lines"></div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <!-- End navbar -->
+        <div class="header-home__content">
+            <h1>Escape <br> in 60 mins ?</h1>
+            <div class="header-home__p">
+                <hr>
+                <p>View our rooms</p>
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+
+        <!-- FEATURED ROOMS -->
+
+        <section class="section-rooms">
+            <hr>
+            <h2>Featured Rooms</h2>
+
+            <!-- First article -->
+
+            <article class="section-rooms__article">
+                <div class="section-rooms__article--aside">
+                    <div class="section-rooms__locker">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_grey.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_grey.svg" class="section-rooms__icon">
+                    </div>
+                    <div>
+                        <h3>Magic Imporium</h3>
+                        <div class="section-rooms__article--aside__info">
+                            <span><img src="./resources/images/icons/icon_person.svg" class="section-rooms__icon"> 2-3</span>
+                            <span><img src="./resources/images/icons/icon_clock.svg" class="section-rooms__icon"> 60</span>
+                            <span><img src="./resources/images/icons/icon_location.svg" class="section-rooms__icon"> NY 3031</span>
+                        </div>
+                    </div>
+                    <p>
+                        Etiam pulvinar enim nec mi tincidunt, convallis hendrerit ligula interdum. Cras condimentum justo sed nunc cursus, ac euismod sem...
+                    </p>
+                    <div>
+                        <a href="#" class="button button--red">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div class="section-rooms__container-img">
+                    <img src="./resources/images/gallery/slide-2-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere." class="section-rooms__article__cover">  
+                </div>
+                
+            </article>
+
+            <!-- Second article -->
+
+            <article class="section-rooms__article">
+                <div class="section-rooms__container-img">
+                    <img src="./resources/images/gallery/room-2-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere." class="section-rooms__article__cover">
+                </div>
+                
+                <div class="section-rooms__article--aside">
+                    <div class="section-rooms__locker">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_grey.svg" class="section-rooms__icon">
+                    </div>
+                    <div>
+                        <h3>The Cure</h3>
+                        <div class="section-rooms__article--aside__info">
+                            <span><img src="./resources/images/icons/icon_person.svg" class="section-rooms__icon"> 2-3</span>
+                            <span><img src="./resources/images/icons/icon_clock.svg" class="section-rooms__icon"> 60</span>
+                            <span><img src="./resources/images/icons/icon_location.svg" class="section-rooms__icon"> LA 20198</span>
+                        </div>
+                    </div>
+                    <p>
+                        Etiam pulvinar enim nec mi tincidunt, convallis hendrerit ligula interdum. Cras condimentum justo sed nunc cursus, ac euismod sem...
+                    </p>
+                    <div>
+                        <a href="#" class="button button--red">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Third article -->
+
+            <article class="section-rooms__article">
+                <div class="section-rooms__article--aside">
+                    <div class="section-rooms__locker">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_red.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_grey.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_grey.svg" class="section-rooms__icon">
+                        <img src="./resources/images/icons/icon_padlock_grey.svg" class="section-rooms__icon">
+                    </div>
+                    <div>
+                        <h3>Burlesque</h3>
+                        <div class="section-rooms__article--aside__info">
+                            <span><img src="./resources/images/icons/icon_person.svg" class="section-rooms__icon"> 3-5</span>
+                            <span><img src="./resources/images/icons/icon_clock.svg" class="section-rooms__icon"> 60</span>
+                            <span><img src="./resources/images/icons/icon_location.svg" class="section-rooms__icon"> BH 90210</span>
+                        </div>
+                    </div>
+                    <p>
+                        Etiam pulvinar enim nec mi tincidunt, convallis hendrerit ligula interdum. Cras condimentum justo sed nunc cursus, ac euismod sem...
+                    </p>
+                    <div>
+                        <a href="#" class="button button--red">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div class="section-rooms__container-img">
+                    <img src="./resources/images/gallery/room-3-557x400.jpg" alt="An open door that lets you see the inside of a house in an 1800's atmosphere." class="section-rooms__article__cover">
+                </div>
+                
+            </article>
+            <a href="#" class="button button--white">View All Rooms</a>
+        </section>
+
+        <!-- HOW IT WORKS -->
+
+        <section class="section-works">
+            <hr>
+            <h2>How it works</h2>
+            <ul>
+                <li>
+                    <img src="./resources/images/icons/icon_padlock_rounded.svg" class="section-works__icon">
+                    <p class="section-works__title">You Are Locked In</p>
+                    <p>You will bring nothing in, but the escape room will be filled with useful and sometimes irrelevant objects.</p>
+                </li>
+                <li>
+                    <img src="./resources/images/icons/icon_clock_rounded.svg" class="section-works__icon">
+                    <p class="section-works__title">The Clock Is Ticking…</p>
+                    <p>Can you puzzle your way to the intriguing conclusion and escape the room in 60 minutes?</p>
+                </li>
+                <li>
+                    <img src="./resources/images/icons/icon_beat_rounded.svg" class="section-works__icon">
+                    <p class="section-works__title">Feel The Atmosphere</p>
+                    <p>The rooms is built to create an authentic experience with a fun atmosphere, strict attention to detail.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- TESTIMONIALS -->
+
+        <section class="section-testimonials">
+            <hr>
+            <h2>Testimonials</h2>
+            <div class="section-testimonials__content">
+                <figure>
+                    <blockquote>
+                        <p>
+                            "My family and I had a spectacular experience here and they are above and beyond in customer service and entertainment."
+                        </p>
+                    </blockquote>
+                    <img src="./resources/images/avatars/comment-avatar-1.png">
+                    <figcaption>Aaron</figcaption>
+                </figure>
+                <figure>
+                    <blockquote>
+                        <p>
+                            "This place is a blast, especially for groups! I loved seeing how members of different personalities approached the puzzles."
+                        </p>
+                    </blockquote>
+                    <img src="./resources/images/avatars/comment-avatar-2.png">
+                    <figcaption>Tiffany</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- LATEST BLOG POSTS -->
+
+        <section class="section-blog">
+            <hr>
+            <h2>Latest Blog Posts</h2>
+            <a href="#" class="section-blog__sub-title">Browse All Blog Posts</a>
+            <div class="section-blog__content">
+
+                <!-- First article -->
+
+                <article class="section-blog__article">
+                    <div class="section-blog__article--top">
+                        <img src="./resources/images/gallery/room-9-360x222.jpg" alt="A clock on a table" class="section-blog__article--top__cover">
+                        <div>
+                            <img src="./resources/images/avatars/c3c95c15683498ce1cf96c1a61b662c9.png">
+                            <span class="author-name">Andy Bernard</span>
+                        </div>
+                    </div>
+                    <div class="section-blog__article--bottom">
+                        <span>Promotions</span>
+                        <hr>
+                        <h3>Kidnapped Game Now Open</h3>
+                        <p>Cras eu tristique tellus, sodales elementum turpis. Duis sed rhoncus nulla.... </p>
+                    </div>
+                </article>
+
+                <!-- Second article -->
+
+                <article class="section-blog__article">
+                    <div class="section-blog__article--top">
+                        <img src="./resources/images/gallery/room-7-360x222.jpg" alt="A clock on a table" class="section-blog__article--top__cover">
+                        <div>
+                            <img src="./resources/images/avatars/betty-draper.png">
+                            <span class="author-name">Betty Draper</span>
+                        </div>
+                    </div>
+                    <div class="section-blog__article--bottom">
+                        <span>Team cuilding</span>
+                        <hr>
+                        <h3>Perfect for Team Building</h3>
+                        <p>Cras eu tristique tellus, sodales elementum turpis. Duis sed rhoncus nulla. Proin tincidunt, enim in elementum egestas, lectus tortor pellentesque....</p>
+                    </div>
+                </article>
+
+                <!-- Third article -->
+
+                <article class="section-blog__article">
+                    <div class="section-blog__article--top">
+                        <img src="./resources/images/gallery/post-img-2-360x222.jpg" alt="A clock on a table" class="section-blog__article--top__cover">
+                        <div>
+                            <img src="./resources/images/avatars/c3c95c15683498ce1cf96c1a61b662c9.png">
+                            <span class="author-name">Andy Bernard</span>
+                        </div>
+                    </div>
+                    <div class="section-blog__article--bottom">
+                        <span>Corporate events</span>
+                        <hr>
+                        <h3>What is an Escape Room?</h3>
+                        <p>Cras eu tristique tellus, sodales elementum turpis. Duis sed rhoncus nulla. Proin tincidunt, enim in elementum....  </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- WHO CAN PLAY -->
+
+        <section class="section-who">
+            <div class="section-who__section-title">
+                <hr>
+                <h2>Who can play</h2>
+            </div>
+            <ul class="section-who__content">
+                <li>
+                    <img src="./resources/images/icons/icon_friends_red.svg">
+                    <p>
+                        Friends & Family
+                    </p>
+                </li>
+                <li>
+                    <img src="./resources/images/icons/icon_suitcase_red.svg">
+                    <p>
+                        Team & Co-workers
+                    </p>
+                </li>
+                <li>
+                    <img src="./resources/images/icons/icon_gamepad_red.svg">
+                    <p>
+                        Game lovers
+                    </p>
+                </li>
+                <li>
+                    <img src="./resources/images/icons/icon_plane_red.svg">
+                    <p>
+                        Tourists
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- INSTAGRAM SHOTS -->
+
+        <section class="section-instagram">
+            <hr>
+            <h2>Instagram Shots</h2>
+            <a href="#" class="section-instagram__sub-title">#escapium</a>
+            <div class="section-instagram__content">
+                <img src="./resources/images/gallery/gallery-7.jpg" alt="A woman is smilling">
+                <img src="./resources/images/gallery/gallery-6.jpg" alt="A women is in an empty room">
+                <img src="./resources/images/gallery/gallery-2.jpg" alt="Someone has a key in her hand">
+                <img src="./resources/images/gallery/gallery-1.jpg" alt="Some foot">
+                <img src="./resources/images/gallery/gallery-8.jpg" alt="Some boxes">
+                <img src="./resources/images/gallery/gallery-4.jpg" alt="Two men are looking at a photo">
+                <img src="./resources/images/gallery/gallery-5.jpg" alt="Two womens are looking the camera">
+                <img src="./resources/images/gallery/gallery-3.jpg" alt="An empty room with an open door on the right side">
+            </div>
+            <a href="#" class="button button--white"><img src="./resources/images/icons/icon_instagram.svg" class="instagram">Follow on Instagram</a>
+        </section>
+
+        <!-- GET IN TOUCH -->
+
+        <section class="section-intouch">
+            <div class="section-intouch__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1512.1509011316052!2d-74.00849434172626!3d40.71137219483298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scity%20hall%20park!5e0!3m2!1sfr!2sbe!4v1667132002979!5m2!1sfr!2sbe" width="950" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="section-intouch__content">
+                <hr>
+                <h2>Get In Touch</h2>
+                <form action="" method="get" class="section-intouch__form">
+                    <div>
+                        <label for="name" class="hidden">Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your name...">
+                    </div>
+                    <div>
+                        <label for="email" class="hidden">Your Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email Address...">
+                    </div>
+                    <div>
+                        <label for="message" class="hidden">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Your Message..."></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send Message" class="section-intouch__form--submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- READY FOR THE ESCAPE ? -->
+
+        <section class="section-ready">
+            <hr>
+            <h2>Ready For The Escape?</h2>
+            <p>Escape Room gives you the opportunity to have fun</p>
+            <a href="#" class="button button--red">Book Your Escape</a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <script src="./resources/js/index.js"></script>
 </body>
 </html>

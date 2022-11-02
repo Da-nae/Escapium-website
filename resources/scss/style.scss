@@ -1,3 +1,9 @@
-@import './base/typography.scss';
-@import "./base/reset.scss";
-@import "./pages/about.scss";
+@import './base/_typography.scss';
+//import base
+@import './base/_reset.scss';
+
+// import utils
+@import './sass-utils/variables';
+
+// Import pages
+@import './pages/_home.scss';
