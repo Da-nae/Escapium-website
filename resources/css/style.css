@@ -195,7 +195,6 @@ hr {
   }
   .header-home__content {
     height: 100%;
-    display: sta;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1054,6 +1053,63 @@ hr {
     font-size: 2rem;
     margin-bottom: 10px;
   }
+}
+body {
+  font-family: "hind-regular";
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+main {
+  color: #717171;
+  font-size: 1rem;
+}
+
+.header-rooms {
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url(../images/gallery/slide-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+}
+.header-rooms h1 {
+  color: white;
+  font-family: "hind-bold";
+  font-size: 5rem;
+  margin-bottom: 100px;
+}
+.header-rooms__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+.header-rooms__content p {
+  margin-top: -100px;
+}
+.header-rooms__white {
+  color: white;
+  font-family: "hind-light";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header-rooms__white:hover {
+  color: #F60B0E;
+}
+.header-rooms__grey {
+  font-family: "hind-light";
+  color: #717171;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.section-rooms-list {
+  background: #1b1b1b;
 }
 
 /*# sourceMappingURL=style.css.map */

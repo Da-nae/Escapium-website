@@ -1,0 +1,57 @@
+body {
+    font-family: 'hind-regular';
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+main {
+    color: $main-font-color;
+    font-size: 1rem;
+}
+.header-rooms {
+    background: linear-gradient(to bottom, rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url(../images/gallery/slide-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    h1 {
+        color: white;
+        font-family: "hind-bold";
+        font-size: 5rem;
+        margin-bottom: 100px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 150px;
+        p {
+            margin-top: -100px;
+        }
+    }
+    &__white {
+        color: white;
+        font-family: "hind-light";
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__white:hover {
+        color: $main-color;
+    }
+    &__grey {
+        font-family: "hind-light";
+        color: $main-font-color;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.8rem;
+    }
+
+}
+
+.section-rooms-list {
+    background: $bg-color-dark;
+}
