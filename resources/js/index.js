@@ -13,7 +13,6 @@ document.addEventListener('scroll',() => {
 });
 
 /* Menu Hamburger animation on click */
-
 const btn = document.querySelector('.btn1');
 
 btn.addEventListener('click', presentation);
@@ -23,10 +22,18 @@ function presentation() {
 }
 
 /* Menu hamburger toggle navlinks on click */
-
 const menuHamburger = document.querySelector(".cont-lines")
 const navLinks = document.querySelector(".navbar__navigation")
 
 menuHamburger.addEventListener('click',()=>{
 navLinks.classList.toggle('mobile-menu')
-})
+});
+
+/*  */
+// const signin = document.querySelector('.navbar__right-side__sign-in');
+// const li = document.createElement('li');
+
+// li.appendChild(signin);
+
+// const currentLi = document.querySelector(".navbar_last-element");
+// document.insertBefore(li, currentLi);
