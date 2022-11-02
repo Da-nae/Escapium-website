@@ -337,6 +337,9 @@ body {
   height: 60px;
   outline: 4px solid rgba(126, 126, 126, 0.523);
 }
+.about .Howto .Video .Video__button:hover {
+  outline: 0px;
+}
 .about .certificate h2 {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -370,6 +373,9 @@ body {
 .about .team img {
   max-height: 300px;
 }
+.about .team img:hover {
+  border: 10px solid #F60B0E;
+}
 .about .opinion h2 {
   margin-top: 40px;
   margin-bottom: 5px;
@@ -382,6 +388,11 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #F60B0E;
   text-transform: capitalize;
+}
+.about .opinion a:hover {
+  color: white;
+  border-bottom: 1px solid white;
+  transform: translate(-50%, -50%);
 }
 .about .opinion blockquote {
   width: 330px;
