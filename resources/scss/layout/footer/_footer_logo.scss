@@ -4,11 +4,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // background-color: blue;
+    background-color: rgba(0, 0, 0, 0.493);
     width: 100%;
     height: 150px;
-    border-top: 1px solid white;
-    
+    border-top: 1px solid #717171;
     // Container Inner
     .footer__bot__container--flexbox{
         display: flex;
@@ -21,7 +20,7 @@
 
         // Copyright Link
         a{
-            color: white;
+            color: #717171;
             font-size: 12px;
         }
     }

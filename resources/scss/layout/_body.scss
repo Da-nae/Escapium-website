@@ -11,7 +11,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: blue;
+        // background-color: blue;
     }
 }
 
@@ -20,7 +20,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: greenyellow;
+        // background-color: greenyellow;
     }
 }
 
@@ -29,6 +29,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: red;
+    // background-color: red;
+    margin: 100px;
   }
 }

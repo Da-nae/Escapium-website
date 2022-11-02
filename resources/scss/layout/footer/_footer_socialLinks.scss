@@ -23,13 +23,16 @@
         &.footer__top__blocs__socialLinks__container__icons--grid *{
             width: 40px;
             
+            img{
+                filter: invert(1);
+            }
+            
         }
     }
 }
 
 .footer__top__blocs__socialLinks__container__icons--grid * :first-child{
-    background-color: white;
+    background-color: rgba(146, 146, 146, 0.205);
     padding: 10px;
     border-radius: 50%;
-    border: 1px solid;
 }

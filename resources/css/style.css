@@ -115,7 +115,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: blue;
   }
 }
 @media only screen and (min-width: 412px) {
@@ -123,7 +122,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: greenyellow;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -131,7 +129,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: red;
+    margin: 100px;
   }
 }
 .footer__top__blocs__ourAddress__container--flexbox {
@@ -202,12 +200,14 @@ footer .footer__top__blocs__workingHours__container__shedule--grid * {
 .footer__top__blocs__socialLinks .footer__top__blocs__socialLinks__container__icons--grid.footer__top__blocs__socialLinks__container__icons--grid * {
   width: 40px;
 }
+.footer__top__blocs__socialLinks .footer__top__blocs__socialLinks__container__icons--grid.footer__top__blocs__socialLinks__container__icons--grid * img {
+  filter: invert(1);
+}
 
 .footer__top__blocs__socialLinks__container__icons--grid * :first-child {
-  background-color: white;
+  background-color: rgba(146, 146, 146, 0.205);
   padding: 10px;
   border-radius: 50%;
-  border: 1px solid;
 }
 
 .footer__bot--flexbox {
@@ -215,9 +215,10 @@ footer .footer__top__blocs__workingHours__container__shedule--grid * {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(0, 0, 0, 0.493);
   width: 100%;
   height: 150px;
-  border-top: 1px solid white;
+  border-top: 1px solid #717171;
 }
 .footer__bot--flexbox .footer__bot__container--flexbox {
   display: flex;
@@ -228,7 +229,7 @@ footer .footer__top__blocs__workingHours__container__shedule--grid * {
   height: 60%;
 }
 .footer__bot--flexbox .footer__bot__container--flexbox a {
-  color: white;
+  color: #717171;
   font-size: 12px;
 }
 
@@ -252,6 +253,10 @@ footer p {
   font-size: 12px;
   font-weight: lighter;
   color: #717171;
+}
+footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .footer__bgImage {

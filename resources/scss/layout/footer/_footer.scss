@@ -24,6 +24,11 @@ footer {
     font-weight: lighter;
     color: #717171;
   }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
 }
 
 // Background Image
@@ -69,11 +74,6 @@ footer {
   .footer__top__blocs--grid {
     // padding: 1rem;
     width: 90%;
-    // background-color: yellow;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
-    // grid-row-gap: 12px;
 
     // Containers --grid
     &.footer__top__blocs--grid * {
