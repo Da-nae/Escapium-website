@@ -1,0 +1,25 @@
+// Container
+.footer__top__blocs__workingHours__container{
+  margin: 0px 25px;
+}
+
+
+// Title
+.footer__top__blocs__workingHours__title{
+  margin: 20px 0px 20px;
+}
+
+// Shedule
+footer {
+  .footer__top__blocs__workingHours__container__shedule--grid {
+    // background-color: pink;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 200px;
+
+    & *{
+      // color: red;
+      margin-bottom: 15px;
+    }
+  }
+}

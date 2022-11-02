@@ -1,9 +1,7 @@
-@import './base/_typography.scss';
-//import base
-@import './base/_reset.scss';
-
-// import utils
+@import './base/reset';
 @import './sass-utils/variables';
-
-// Import pages
 @import './pages/_home.scss';
+@import './base/_typography.scss';
+@import './layout/body';
+@import './layout/footer/footer';
+@import './sass-utils/mixins';

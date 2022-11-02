@@ -1,0 +1,113 @@
+@import "./footer_ourAddress";
+@import "./footer_usefulLinks";
+@import "./footer_workingHours";
+@import "./footer_socialLinks";
+@import "./footer_logo";
+
+// Footer
+footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  font-family: Montserrat, sans-serif;
+  
+
+  h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+
+  p {
+    font-size: 10px;
+    font-weight: lighter;
+    color: #717171;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+}
+
+// Background Image
+.footer__bgImage {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(58, 58, 58);
+  position: absolute;
+  z-index: -1;
+
+  .footer__bgImage__color {
+    background-color: rgb(255, 4, 4);
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+  }
+
+  .footer__bgImage__image {
+    // background-color: pink;
+    width: 100%;
+    height: 100%;
+    background-image: url(/resources/images/gallery/room-7-1600-599.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+    
+  }
+}
+
+// Footer Top Section
+footer {
+  .footer__top--flexbox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // background-color: blue;
+  }
+
+  // Containers --grid
+  .footer__top__blocs--grid {
+    // padding: 1rem;
+    width: 80%;
+
+    // Containers --grid
+    &.footer__top__blocs--grid * {
+      // background-color: grey;
+    }
+  }
+}
+
+// Index Numbers
+footer {
+  .footer__top__blocs__ourAddress__index--flexbox,
+  .footer__top__blocs__usefulLinks__index--flexbox,
+  .footer__top__blocs__workingHours__index--flexbox,
+  .footer__top__blocs__socialLinks__index--flexbox {
+    // background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60px;
+
+    & :first-child {
+      color: white;
+      margin: 5px;
+    }
+  }
+}
+
+// Index red line
+footer {
+  .footer__top__blocs__index__hr{
+    width: 30px;
+    height: 2px;
+    border: none;
+    margin: 0;
+    background-color: red;
+  }
+}
