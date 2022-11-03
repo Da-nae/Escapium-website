@@ -1077,6 +1077,15 @@ main {
   font-family: "hind-bold";
   font-size: 5rem;
   margin-bottom: 100px;
+  display: flex;
+  align-items: baseline;
+}
+.header-rooms h1::after {
+  content: "";
+  background: #F60B0E;
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
 }
 .header-rooms__content {
   display: flex;
@@ -1109,7 +1118,190 @@ main {
 }
 
 .section-rooms-list {
+  padding: 130px 0 150px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background: #1b1b1b;
+}
+.section-rooms-list__difficulty {
+  display: flex;
+  margin-bottom: 60px;
+}
+.section-rooms-list__difficulty li {
+  margin: 0 8px;
+}
+.section-rooms-list__difficulty li a {
+  background: none;
+  outline: 2px solid #717171;
+}
+.section-rooms-list__difficulty li a:hover {
+  background: #717171;
+  outline: none;
+}
+.section-rooms-list__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 1200px;
+  flex-wrap: wrap;
+}
+.section-rooms-list__items {
+  background-size: cover;
+  background-position: center;
+  width: 260px;
+  height: 390px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 0 15px 30px 15px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.8);
+}
+.section-rooms-list__items__content {
+  margin: 0 0 15px 15px;
+}
+.section-rooms-list__items__title {
+  font-family: "hind-bold";
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 15px;
+}
+.section-rooms-list__items__info {
+  margin-top: 15px;
+}
+.section-rooms-list__items__info span {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+.section-rooms-list__items:nth-child(1) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/slide-2-557x400.jpg);
+}
+.section-rooms-list__items:nth-child(2) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/room-2-557x400.jpg);
+}
+.section-rooms-list__items:nth-child(3) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/room-3-557x400.jpg);
+}
+.section-rooms-list__items:nth-child(4) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/prison-break.jpg);
+}
+.section-rooms-list__items:nth-child(5) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/old-hospital.jpg);
+}
+.section-rooms-list__items:nth-child(6) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/gallery-1.jpg);
+}
+.section-rooms-list__items:nth-child(7) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/room-7-360x222.jpg);
+}
+.section-rooms-list__items:nth-child(8) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/gallery-8.jpg);
+}
+.section-rooms-list__items:nth-child(9) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/room-9-360x222.jpg);
+}
+.section-rooms-list__items:nth-child(10) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/room-3-557x400.jpg);
+}
+.section-rooms-list__items:nth-child(11) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/prison-break.jpg);
+}
+.section-rooms-list__items:nth-child(12) {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(0, 0, 0)), url(../images/gallery/room-2-557x400.jpg);
+}
+
+.section-rooms-list__locker-icon, .section-rooms-list__icon {
+  width: 15px;
+}
+
+.section-rooms-list__pages {
+  display: flex;
+  margin-top: 60px;
+}
+.section-rooms-list__pages__round {
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  outline: 2px solid #717171;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+}
+.section-rooms-list__pages__round:hover {
+  background: #717171;
+}
+.section-rooms-list__pages__no-round {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  .header-rooms {
+    height: 350px;
+  }
+  .header-rooms h1 {
+    font-size: 4rem;
+  }
+  .header-rooms h1::after {
+    content: "";
+    background: #F60B0E;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+  }
+  .section-rooms-list {
+    padding: 100px 0 120px 0;
+  }
+}
+@media (max-width: 580px) {
+  .header-rooms {
+    height: 250px;
+  }
+  .header-rooms h1 {
+    margin-top: -50px;
+    font-size: 2rem;
+  }
+  .header-rooms h1::after {
+    content: "";
+    background: #F60B0E;
+    width: 8px;
+    height: 8px;
+    border-radius: 20px;
+  }
+  .section-rooms-list {
+    padding: 50px 0 60px 0;
+  }
+  .section-rooms-list__difficulty {
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-rooms-list__difficulty li {
+    margin: 15px 8px;
+  }
+  .section-rooms-list__difficulty li a {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    display: block;
+    min-width: 250px;
+    width: 60%;
+  }
+  .section-rooms-list__difficulty li a:hover {
+    background: #717171;
+    outline: none;
+  }
+  .section-rooms-list__items {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
