@@ -60,8 +60,6 @@ body {
 
     .bloglog__article {
         margin-top: 20px;
-        padding-top: 30px;
-        padding-bottom: 30px;
         width: 80%;
         background-color: $bg-color-medium;
 
@@ -79,10 +77,29 @@ body {
             font-size: 1.4rem;
         }
 
+        img {
+            margin: 10px;
+            width:80%;
+        }
+
+        .article__cover {
+            padding: 0px;
+            margin: 0px;
+            width: 100%;
+            filter: brightness(60%);
+        }
+
+        figcaption {
+            font-size: 0.8rem;
+        }
+
         .tags {
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-bottom: 30px;
     
             h2 {
                 margin-bottom: 20px;
@@ -95,7 +112,7 @@ body {
                 text-decoration: none;
                 text-transform: uppercase;
                 font-family: "hind-bold";
-                font-size: 0.5rem;
+                font-size: 0.6rem;
                 padding: 0.5rem 0.7rem;
                 border: 1px solid $nav-font-color;
                 background-color: $bg-color-medium;
@@ -106,6 +123,38 @@ body {
             button:hover {
                 background-color: $hr-color;
             }
+        }
+    }
+
+    .bloglog__author {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 80%;
+        margin-top: 30px;
+        padding: 15px;
+        border: 2px solid $hr-color;
+
+        img {
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+        }
+
+        .author__name {
+            display: flex;
+            flex-direction: column;
+
+            h3 {
+                text-transform: capitalize;
+                color: white;
+                font-family: "hind-bold";
+                letter-spacing: 0.1rem;
+            }
+        }
+
+        button {
+            background-color: $bg-color-dark;
         }
     }
 }

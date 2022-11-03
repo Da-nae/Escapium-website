@@ -2688,8 +2688,6 @@ body {
 }
 .blog__log .bloglog__article {
   margin-top: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
   width: 80%;
   background-color: #222222;
 }
@@ -2705,10 +2703,26 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
 }
+.blog__log .bloglog__article img {
+  margin: 10px;
+  width: 80%;
+}
+.blog__log .bloglog__article .article__cover {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  filter: brightness(60%);
+}
+.blog__log .bloglog__article figcaption {
+  font-size: 0.8rem;
+}
 .blog__log .bloglog__article .tags {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 30px;
 }
 .blog__log .bloglog__article .tags h2 {
   margin-bottom: 20px;
@@ -2720,7 +2734,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-family: "hind-bold";
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   padding: 0.5rem 0.7rem;
   border: 1px solid #777;
   background-color: #222222;
@@ -2729,6 +2743,33 @@ body {
 }
 .blog__log .bloglog__article .tags button:hover {
   background-color: #333333;
+}
+.blog__log .bloglog__author {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+  margin-top: 30px;
+  padding: 15px;
+  border: 2px solid #333333;
+}
+.blog__log .bloglog__author img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.blog__log .bloglog__author .author__name {
+  display: flex;
+  flex-direction: column;
+}
+.blog__log .bloglog__author .author__name h3 {
+  text-transform: capitalize;
+  color: white;
+  font-family: "hind-bold";
+  letter-spacing: 0.1rem;
+}
+.blog__log .bloglog__author button {
+  background-color: #1b1b1b;
 }
 
 body {
