@@ -22,6 +22,14 @@
         .contact__container__header__container__inner__container__top{
             // background-color: blue;
             font-family: Montserrat, sans-serif;
+
+            ::after{
+                content: '.';
+                width: 20px;
+                height: 20px;
+                border-radius: 20px;
+                background-color: red;
+            }
         }
 
         // HEADER INNER CONTAINER BOT
