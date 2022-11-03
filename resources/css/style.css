@@ -2678,13 +2678,6 @@ body {
   padding-top: 50px;
   text-transform: lowercase;
 }
-.blog__log .bloglog__title h1::after {
-  content: "";
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #F60B0E;
-}
 .blog__log .bloglog__title .article__infos {
   display: flex;
   font-size: 0.7rem;
