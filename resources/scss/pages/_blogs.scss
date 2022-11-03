@@ -11,8 +11,8 @@ body {
         background-color: $hr-color;
     }
 
-    li:hover {
-        color: $main-color;
+    li {
+        position: relative;
     }
 }
 
@@ -124,10 +124,20 @@ body {
             display: flex;
             flex-direction: column;
             margin: 20px 15px;
+            overflow: hidden;
 
             img {
                 height: 200px;
                 object-fit: cover;
+                transition: transform .5s ease;
+                filter: brightness(50%);
+                transition: transform 2s, filter 1.5s ease-in-out;
+
+
+                &:hover {
+                    transform: scale(1.1);
+                    filter: brightness(100%);
+                }
             }
 
             .article__content {
@@ -241,6 +251,22 @@ body {
 
         li {
             margin-bottom: 10px;
+
+            &:hover {
+                color: white;
+
+                &::before{
+                    content : "";
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    border-radius: 50%;
+                    background-color: $main-color;
+                    margin-right: 10px;
+                    position : absolute;
+                    left: -10px;
+                    top: 10px;
+                }
+            }
         }
     }
 
@@ -252,7 +278,7 @@ body {
         font-size: 0.7rem;
 
         .hr__side {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
 
         h2 {
@@ -261,7 +287,9 @@ body {
         }
 
         li {
-            margin-bottom: 50px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            padding-left: 15px;
             font-weight: 700;
             font-family: 'Montserrat', sans-serif;
             display: flex;
@@ -270,6 +298,15 @@ body {
 
             :first-child {
                 font-size: 0.5rem;
+            }
+
+            &:hover {
+                background-image: linear-gradient(
+                    290deg,
+                    rgba(0, 0, 0, 0.6) 0%,
+                    rgba(0, 0, 0, 0.6) 100%
+                ), url('/resources/images/gallery/gallery-1.jpg');
+                background-position: cover;
             }
         }
 
@@ -390,6 +427,23 @@ body {
             font-weight: 700;
             font-family: 'Montserrat', sans-serif;
             text-transform: uppercase;
+            position: relative;
+
+            &:hover {
+                color: white;
+
+                &::before{
+                    content : "";
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    border-radius: 50%;
+                    background-color: $main-color;
+                    margin-right: 10px;
+                    position : absolute;
+                    left: -10px;
+                    top: 5px;
+                }
+            }
         }
     }
 }

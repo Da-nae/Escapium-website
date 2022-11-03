@@ -1919,8 +1919,8 @@ body hr {
   margin: 0 0 20px 0;
   background-color: #333333;
 }
-body li:hover {
-  color: #F60B0E;
+body li {
+  position: relative;
 }
 
 .main__responsive {
@@ -2012,10 +2012,18 @@ body li:hover {
   display: flex;
   flex-direction: column;
   margin: 20px 15px;
+  overflow: hidden;
 }
 .blogs .blog__articles .blog__article img {
   height: 200px;
   object-fit: cover;
+  transition: transform 0.5s ease;
+  filter: brightness(50%);
+  transition: transform 2s, filter 1.5s ease-in-out;
+}
+.blogs .blog__articles .blog__article img:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
 }
 .blogs .blog__articles .blog__article .article__content {
   background-color: #222222;
@@ -2111,6 +2119,20 @@ body li:hover {
 .blogs .categories li {
   margin-bottom: 10px;
 }
+.blogs .categories li:hover {
+  color: white;
+}
+.blogs .categories li:hover::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #F60B0E;
+  margin-right: 10px;
+  position: absolute;
+  left: -10px;
+  top: 10px;
+}
 .blogs .recent {
   display: flex;
   flex-direction: column;
@@ -2119,14 +2141,16 @@ body li:hover {
   font-size: 0.7rem;
 }
 .blogs .recent .hr__side {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .blogs .recent h2 {
   margin-bottom: 20px;
   margin-top: 30px;
 }
 .blogs .recent li {
-  margin-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   display: flex;
@@ -2135,6 +2159,10 @@ body li:hover {
 }
 .blogs .recent li :first-child {
   font-size: 0.5rem;
+}
+.blogs .recent li:hover {
+  background-image: linear-gradient(290deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("/resources/images/gallery/gallery-1.jpg");
+  background-position: cover;
 }
 .blogs .recent span {
   margin-right: 15px;
@@ -2236,6 +2264,21 @@ body li:hover {
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  position: relative;
+}
+.blogs .archives li:hover {
+  color: white;
+}
+.blogs .archives li:hover::before {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #F60B0E;
+  margin-right: 10px;
+  position: absolute;
+  left: -10px;
+  top: 5px;
 }
 
 @media only screen and (min-width: 800px) {
