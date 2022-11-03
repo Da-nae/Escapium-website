@@ -2675,13 +2675,13 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
-  padding-top: 50px;
+  padding-top: 70px;
   text-transform: lowercase;
 }
 .blog__log .bloglog__title .article__infos {
   display: flex;
   font-size: 0.7rem;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 .blog__log .bloglog__title .article__infos span {
   margin-right: 30px;
