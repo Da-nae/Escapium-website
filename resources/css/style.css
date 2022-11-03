@@ -2685,6 +2685,30 @@ body {
   border-radius: 50%;
   background-color: #F60B0E;
 }
+.blog__log .bloglog__title .article__infos {
+  display: flex;
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+}
+.blog__log .bloglog__title .article__infos span {
+  margin-right: 30px;
+}
+.blog__log .bloglog__article {
+  width: 80%;
+  background-color: #222222;
+}
+.blog__log .bloglog__article p {
+  text-align: left;
+  padding: 20px;
+}
+.blog__log .bloglog__article h2 {
+  text-align: left;
+  padding-left: 20px;
+  font-weight: 700;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
 
 body {
   width: 100vw;
