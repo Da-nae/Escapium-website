@@ -1,0 +1,182 @@
+.header-single-room {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0), $bg-color-dark), url(../images/gallery/prison2.jpg);
+    background-position: center;
+    height: 500px;
+    h1 {
+        color: white;
+        font-family: "hind-bold";
+        font-size: 5rem;
+        padding: 350px 0 10px 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-single-room  {
+        height: 350px;
+        h1 {
+            padding-left: 50px;
+            font-size: 4rem;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .header-single-room  {
+        height: 250px;
+        h1 {
+            padding-left: 30px;
+            font-size: 2rem;
+            position: relative;
+            bottom: 150px;
+        }
+    }
+}
+
+.section-magicimporium {
+    background: $bg-color-dark;
+    padding: 130px 0 150px 0;
+    display: flex;
+    justify-content: center;
+    &__flex {
+        max-width: 1100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__left {
+        width: 66%;
+        p {
+            margin-bottom: 15px;
+        }
+    }
+    &__right {
+        width: 33%;
+    }
+    &__top {
+        display: flex;
+    }
+    &__info {
+        width: 33%;
+        margin-bottom: 15px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--middle {
+            border-left: 1px solid $hr-color;
+            border-right: 1px solid $hr-color;
+        }
+        &__title {
+            font-family: "hind-bold";
+            color: white;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+    } 
+    &__contact {
+        margin-bottom: 50px;
+        li {
+            border-bottom: 1px solid $hr-color;
+            padding: 8px 0;
+            span {
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                margin-left: 15px;
+            }
+            img {
+                width: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .section-magicimporium {
+        &__left {
+            width: 95%;
+        }
+    }
+}
+@media (max-width: 500px) {
+    .section-magicimporium {
+        &__right {
+            width: 95%;
+        }
+    }
+}
+
+
+.section-booking-form {
+    background: $bg-color-medium;
+    padding: 130px 0 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        color: white;
+        font-family: "hind-bold";
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-booking-form {
+        padding: 100px 0 120px 0;
+    }
+}
+@media (max-width: 500px) {
+    .section-booking-form {
+        padding: 50px 0 60px 0;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    .section-rooms-list__items.bigger {
+        width: 95%;
+    }
+}
+
+.section-other-rooms {
+    background: $bg-color-dark;
+    padding: 130px 0 150px 0;
+    display: flex;
+    justify-content: center;
+    &__title {
+        width: 100%;
+    }
+    h2 {
+        color: white;
+        font-family: "hind-bold";
+        font-size: 2rem;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    &__gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 850px) {
+    .section-other-rooms {
+        padding: 100px 0 120px 0;
+    }
+}
+@media (max-width: 500px) {
+    .section-other-rooms {
+        padding: 50px 0 60px 0;
+        h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+/* icon */
+
+.section-rooms-list__items.bigger {
+    width: 320px;
+    height: 320px;
+}

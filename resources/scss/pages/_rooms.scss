@@ -107,6 +107,10 @@ main {
             font-size: 1.3rem;
             color: white;
             margin-top: 15px;
+            a {
+                color: white;
+                text-decoration: none;
+            }
         }
         &__info {
             margin-top: 15px;
