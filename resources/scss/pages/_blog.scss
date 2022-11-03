@@ -59,6 +59,9 @@ body {
     }
 
     .bloglog__article {
+        margin-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         width: 80%;
         background-color: $bg-color-medium;
 
@@ -74,6 +77,35 @@ body {
             color: white;
             font-family: 'Montserrat', sans-serif;
             font-size: 1.4rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+    
+            h2 {
+                margin-bottom: 20px;
+                margin-top: 30px;
+            }
+    
+            button {
+                border-radius: 50px;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: "hind-bold";
+                font-size: 0.5rem;
+                padding: 0.5rem 0.7rem;
+                border: 1px solid $nav-font-color;
+                background-color: $bg-color-medium;
+                width: fit-content;
+                margin: 5px;
+            }
+    
+            button:hover {
+                background-color: $hr-color;
+            }
         }
     }
 }

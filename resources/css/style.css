@@ -2687,6 +2687,9 @@ body {
   margin-right: 30px;
 }
 .blog__log .bloglog__article {
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 80%;
   background-color: #222222;
 }
@@ -2701,6 +2704,31 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 1.4rem;
+}
+.blog__log .bloglog__article .tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.blog__log .bloglog__article .tags h2 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+.blog__log .bloglog__article .tags button {
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "hind-bold";
+  font-size: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #777;
+  background-color: #222222;
+  width: fit-content;
+  margin: 5px;
+}
+.blog__log .bloglog__article .tags button:hover {
+  background-color: #333333;
 }
 
 body {
