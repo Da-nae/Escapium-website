@@ -1,0 +1,22 @@
+/*--------------I M P O R T S--------------------*/
+@import "./header";
+@import "./main";
+/*----------------------------------------------*/
+
+.contact__container--flexbox {
+//   background-color: rgb(17, 0, 255);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  p, li {
+    color: white;
+    font-size: 12px;
+  }
+}
