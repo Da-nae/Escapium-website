@@ -1,8 +1,15 @@
-@import './base/reset';
+//import base
+@import './base/_reset.scss';
+
+// import utils
 @import './sass-utils/variables';
+@import './base/_typography.scss';
+@import './sass-utils/mixins';
+
+// Import pages
 @import './pages/_home.scss';
 @import './pages/about.scss';
-@import './base/_typography.scss';
+@import './pages/blogs.scss';
+// import layout
 @import './layout/body';
 @import './layout/footer/footer';
-@import './sass-utils/mixins';
