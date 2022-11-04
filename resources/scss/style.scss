@@ -1,9 +1,14 @@
-@import './base/reset';
-@import './sass-utils/variables';
-@import './pages/_home.scss';
-@import './pages/about.scss';
-@import './pages/contact';
-@import './base/_typography.scss';
-@import './layout/body';
-@import './layout/footer/footer';
-@import './sass-utils/mixins';
+//import base
+@use './base/_reset.scss';
+
+// import utils
+@use './base/_typography.scss';
+@forward './sass-utils/mixins';
+
+// Import pages
+@use './pages/_home.scss';
+@use './pages/about.scss';
+@use './pages/blogs.scss';
+@use './pages/blog.scss';
+@use './pages/_rooms.scss';
+@use './pages/singleroom';
