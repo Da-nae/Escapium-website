@@ -1,3 +1,8 @@
+@use "../base/reset.scss";
+@use "../base/typography.scss";
+@use "../layout/navbar.scss";
+@use '../sass-utils/variables' as *;
+
 body {
     font-family: 'hind-regular';
     font-size: 10px;
@@ -160,8 +165,6 @@ hr {
         }
     }
 }
-
-@import '../layout/navbar';
 
 /* FEATURED ROOMS */
 
@@ -330,6 +333,7 @@ hr {
 
 .section-testimonials {
     padding: 130px 0 150px 0;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -729,6 +733,7 @@ hr {
 
 .section-ready {
     padding: 130px 0 80px 0;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;

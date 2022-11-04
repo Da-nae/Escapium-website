@@ -1,3 +1,8 @@
+@use "../base/reset.scss";
+@use "../base/typography.scss";
+@use "../layout/navbar.scss";
+@use '../sass-utils/variables' as *;
+
 body {
     font-family: 'hind-regular';
     font-size: 10px;
