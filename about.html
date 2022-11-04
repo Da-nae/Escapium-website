@@ -9,7 +9,69 @@
 </head>
 <body>
 <main class="about">
-<!--         Add Navbar      -->
+<!-- Start navbar -->
+<header>
+    <nav class="navbar">
+
+        <!-- LEFT SIDE -->
+
+        <img src="./resources/images/logo/logo.png">
+        <ul class="navbar__navigation">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="#">Features</a>
+                <span class=".hidden">+</span>
+            </li>
+            <li>
+                <a href="./rooms.html">Rooms</a>
+                <span>+</span>
+            </li>
+            <li>
+                <a href="#">Booking</a>
+                <span>+</span>
+            </li>
+            <li>
+                <a href="./blog.html">Blog</a>
+                <span>+</span>
+            </li>
+            <li>
+                <a href="./contact.html" class="navbar_last-element">Contacts</a>
+            </li>
+            <div class="navbar__right-side__sign-in nav__left">
+                <img src="./resources/images/icons/icon_person_wired.svg" class="navbar__right-side__icon">
+                <span>Sign In</span>
+            </div>
+        </ul>
+
+        <!-- RIGHT SIDE -->
+
+        <div class="navbar__right-side">
+
+            <!-- <img src="./resources/images/icons/icon_calendar.svg" class="navbar__hide"> -->
+            <a href="#" class="button button--white navbar__booknow">Book Now!</a>
+            <img src="./resources/images/icons/icon_search.svg" class="navbar__right-side__icon">
+            <div class="navbar__right-side__sign-in nav__right">
+                <img src="./resources/images/icons/icon_person_wired.svg" class="navbar__right-side__icon">
+                <span>Sign In</span>
+            </div>
+
+            <div class="navbar__right-side__hamburger">
+                <div class="cont-lines btn1">
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                    <div class="hamburger__lines"></div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- End navbar -->
+</header>
 
 <!--         Header          -->
     <section class="about__title">
@@ -189,5 +251,6 @@
 
 <!--   Footer  -->
 
+<script src="./resources/js/index.js"></script>
 </body>
 </html>

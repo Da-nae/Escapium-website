@@ -1,11 +1,19 @@
-@import './base/_typography.scss';
 //import base
 @import './base/_reset.scss';
 
 // import utils
 @import './sass-utils/variables';
+@import './base/_typography.scss';
+@import './sass-utils/mixins';
 
 // Import pages
 @import './pages/_home.scss';
+@import './pages/about.scss';
+@import './pages/blogs.scss';
+@import './pages/blog.scss';
 @import './pages/_rooms.scss';
 @import './pages/singleroom';
+
+// import layout
+@import './layout/body';
+@import './layout/footer/footer';

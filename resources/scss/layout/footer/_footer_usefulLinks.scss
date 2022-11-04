@@ -1,0 +1,26 @@
+// Container
+.footer__top__blocs__usefulLinks__container{
+    // background-color: red;
+    margin: 0px 25px 20px;
+    height: 230px;
+
+    .footer__top__blocs__usefulLinks__container__links {
+        // background-color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        & * {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Title
+.footer__top__blocs__usefulLinks__container__title{
+    margin: 20px 0px 20px;
+    
+}
+
+
+
