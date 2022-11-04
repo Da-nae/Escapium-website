@@ -2714,6 +2714,7 @@ body .sidebar {
 .blog__log .bloglog__article img {
   margin: 10px;
   width: 80%;
+  object-fit: cover;
 }
 .blog__log .bloglog__article .article__cover {
   padding: 0px;
