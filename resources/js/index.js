@@ -37,7 +37,9 @@ const openFaq = (accordeon) => {
     const content = accordeon.querySelector(".faq__accordeon");
     accordeon.classList.add("accordeon__active");
     content.style.opacity = 1;
-    content.style.height = 50;
+    content.style.position = "relative";
+
+    content.style.height = "50px";
 }
 
 const closeFaq = (accordeon) => {

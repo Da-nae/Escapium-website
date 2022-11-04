@@ -284,9 +284,7 @@ body {
 
     .faqs {
         background-color: $bg-color-light;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
 
         hr {
             border-color: $hr-color-light;
@@ -304,6 +302,7 @@ body {
             font-weight: bold;
             color: $bg-color-dark;
             font-size: 1rem;
+            margin-top: 10px;
         }
 
         p {
@@ -318,16 +317,23 @@ body {
             flex-direction: row;
             align-items: flex-start;
             max-width: 60%;
+            padding: 1rem 0;
+            margin: auto;
 
             .faq__question {
                 text-align: left;
                 margin-right: 10px;
                 margin-left: 10px;
                 margin-bottom: 10px;
+                display: block;
             }
 
             .faq__accordeon {
                 opacity: 0;
+                height: 0;
+                transition: height  0.5s ease-in-out,opacity 0.5s ease-in-out;
+                position: absolute;
+                top:0;
             }
 
             .accordeon__active {

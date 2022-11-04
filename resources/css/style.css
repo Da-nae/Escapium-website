@@ -1474,9 +1474,7 @@ body {
 }
 .about .faqs {
   background-color: #FEFEFE;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 .about .faqs hr {
   border-color: #9B9B9B;
@@ -1492,6 +1490,7 @@ body {
   font-weight: bold;
   color: #1b1b1b;
   font-size: 1rem;
+  margin-top: 10px;
 }
 .about .faqs p {
   color: #9B9B9B;
@@ -1504,15 +1503,22 @@ body {
   flex-direction: row;
   align-items: flex-start;
   max-width: 60%;
+  padding: 1rem 0;
+  margin: auto;
 }
 .about .faqs .faq__content .faq__question {
   text-align: left;
   margin-right: 10px;
   margin-left: 10px;
   margin-bottom: 10px;
+  display: block;
 }
 .about .faqs .faq__content .faq__accordeon {
   opacity: 0;
+  height: 0;
+  transition: height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
 }
 .about .faqs .faq__content .accordeon__active .faq__accordeon {
   opacity: 1;
