@@ -1,6 +1,7 @@
 /*--------------I M P O R T S--------------------*/
-@import "./header";
-@import "./main";
+@use "./header.scss";
+@use "./main.scss";
+@use '../sass-utils/variables' as *;
 /*----------------------------------------------*/
 
 .contact__container--flexbox {
