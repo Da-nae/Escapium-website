@@ -31,11 +31,17 @@ hr {
     padding: 1rem 2rem;
     &--red {
         background-color: $main-color;
-    } 
+    }
+    &--red:hover {
+        background-color: #d3080a;
+    }
     &--white {
-        border: 1px solid $button-gray;
+        border: 2px solid $main-font-color;
         margin-bottom: 75px;
         font-size: 1rem;
+    }
+    &--white:hover {
+        background: $main-font-color;
     }
 }
 
@@ -680,6 +686,9 @@ hr {
             width: auto;
             font-size: 1rem;
             cursor: pointer;
+        }
+        .section-intouch__form--submit:hover {
+            background: $main-font-color;
         }
     }
 }
