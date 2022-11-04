@@ -1923,6 +1923,11 @@ body hr {
 body li {
   position: relative;
 }
+body a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
 
 .main__responsive {
   display: flex;
