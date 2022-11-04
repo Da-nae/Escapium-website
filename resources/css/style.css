@@ -2879,6 +2879,10 @@ main {
   height: auto;
 }
 
+.contact__container__main__container__content__contactInfos {
+  margin-left: 30px;
+}
+
 .infoContainer__list {
   display: grid;
   grid-template-rows: repeat(3, 60px);
@@ -2898,6 +2902,12 @@ main {
 .infoContainer__list li .mail__text {
   color: white;
   text-decoration: none;
+}
+
+.contact__container__main__container__contactForm {
+  margin-left: 50px;
+  width: 500px;
+  padding-bottom: 80px;
 }
 
 .contactForm__form {
