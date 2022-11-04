@@ -1,0 +1,28 @@
+/*--------------I M P O R T S--------------------*/
+@import "./header";
+@import "./main";
+/*----------------------------------------------*/
+
+.contact__container--flexbox {
+//   background-color: rgb(17, 0, 255);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  h2{
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  p, li {
+    color: $main-font-color;
+    font-size: 12px;
+  }
+}
