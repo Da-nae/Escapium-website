@@ -742,7 +742,6 @@ body {
   background-color: #222222;
   width: 100%;
   height: auto;
-  padding-bottom: 50px;
 }
 
 .contact__container__main__container__content {
@@ -756,6 +755,10 @@ body {
 .contact__container__main__container__content .contact__container__main__container__content__contactInfos .contact__container__main__container__contactInfos__content__infoContainer {
   width: 100%;
   height: auto;
+}
+
+.contact__container__main__container__content__contactInfos {
+  margin-left: 30px;
 }
 
 .infoContainer__list {
@@ -779,20 +782,39 @@ body {
   text-decoration: none;
 }
 
+.contact__container__main__container__contactForm {
+  margin-left: 50px;
+  width: 500px;
+  padding-bottom: 80px;
+}
+
 .contactForm__form {
   display: flex;
   flex-direction: column;
 }
-.contactForm__form input, .contactForm__form textarea {
+.contactForm__form input,
+.contactForm__form textarea {
   background: none;
   border: none;
   border-bottom: 2px solid #717171;
 }
+.contactForm__form input {
+  margin-bottom: 50px;
+}
 
+@media only screen and (min-width: 768px) {
+  .contact__container__main__container__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact__container__main__container__content .contact__container__main__container__content__contactInfos {
+    width: auto;
+  }
+}
 /*----------------------------------------------*/
 .contact__container--flexbox {
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
