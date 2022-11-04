@@ -282,7 +282,7 @@ body {
 
     // FAQs section :
 
-    .faq {
+    .faqs {
         background-color: $bg-color-light;
         display: flex;
         flex-direction: column;
@@ -324,6 +324,16 @@ body {
                 margin-right: 10px;
                 margin-left: 10px;
                 margin-bottom: 10px;
+            }
+
+            .faq__accordeon {
+                opacity: 0;
+            }
+
+            .accordeon__active {
+                .faq__accordeon {
+                    opacity: 1;
+                }
             }
 
             .faq__button {
