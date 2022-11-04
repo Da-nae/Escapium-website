@@ -2910,6 +2910,16 @@ main {
   border-bottom: 2px solid #717171;
 }
 
+@media only screen and (min-width: 768px) {
+  .contact__container__main__container__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contact__container__main__container__content .contact__container__main__container__content__contactInfos {
+    width: auto;
+  }
+}
 /*--------------I M P O R T S--------------------*/
 /*----------------------------------------------*/
 .contact__container--flexbox {
