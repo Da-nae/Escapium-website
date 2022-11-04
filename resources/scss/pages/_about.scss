@@ -96,7 +96,7 @@ body {
             290deg,
             rgba(0, 0, 0, 0.6) 0%,
             rgba(0, 0, 0, 0.6) 100%
-        ),url('/resources/images/gallery/slide-1.jpg');
+        ),url('../images/gallery/slide-1.jpg');
         background-size: cover;
 
     }
@@ -158,7 +158,7 @@ body {
                 290deg,
                 rgba(0, 0, 0, 0.6) 0%,
                 rgba(0, 0, 0, 0.6) 100%
-            ),url("/resources/images/gallery/gallery-1.jpg");
+            ),url("../images/gallery/gallery-1.jpg");
             min-height: 140px;
             background-size: cover;
 
