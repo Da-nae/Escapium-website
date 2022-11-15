@@ -23,12 +23,12 @@ HTML, SCSS and Javascript.
 
 ## **What the easiest part ?**
 
-- David : 
+- David : The Footer.
 - Quentin : The navbar was pretty difficult to achieve.
 - Danaé : the HTML and SCSS of each page, and the organization of all the SCSS folders.
 
 ## **What the hardest part ?**
 
-- David : 
+- David : Integrate the Google map and also the area icon on it.
 - Quentin : Make the html of each pages.
 - Danaé : the Javascript's animations.
