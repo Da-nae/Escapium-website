@@ -24,11 +24,11 @@ HTML, SCSS and Javascript.
 ## **What the easiest part ?**
 
 - David : 
-- Quentin : 
+- Quentin : The navbar was pretty difficult to achieve.
 - Danaé : the HTML and SCSS of each page, and the organization of all the SCSS folders.
 
 ## **What the hardest part ?**
 
 - David : 
-- Quentin : 
+- Quentin : Make the html of each pages.
 - Danaé : the Javascript's animations.
