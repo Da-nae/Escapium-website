@@ -1,7 +1,7 @@
 # Escapium
 **Second group project initiated by Becode.**
 
-Link of the finished project : [here](https://graceful-maamoul-64162a.netlify.app).
+Link of the finished project : [here](https://becodeorg.github.io/hamilton-7-escapium-DaDaQue-1/).
 
 ## **Who did this project ?**
 
